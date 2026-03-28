@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | EcoWatch</title>
+    
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-leaf"></i> <span>EcoWatch</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Header -->
+    <header class="page-header">
+        <div class="container">
+            <span class="badge">Our Initiatives</span>
+            <h1>Save Earth, Save Life</h1>
+            <p>Explore our ongoing projects dedicated to restoring nature, monitoring pollution, and empowering communities across Kenya.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="projects-section">
+        <div class="container">
+            
+            <!-- Filter Buttons -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="conservation">Conservation</button>
+                <button class="filter-btn" data-filter="technology">Technology</button>
+                <button class="filter-btn" data-filter="community">Community</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+
+                <!-- Project Card 1 -->
+                <div class="project-card" data-category="conservation">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80" alt="Reforestation">
+                        <div class="card-badge">Active</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="fa-regular fa-calendar"></i> Jan 2026</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Nairobi</span>
+                        </div>
+                        <h3>Urban Reforestation Drive</h3>
+                        <p>Planting 10,000 native trees in urban centers to combat heat islands and improve air quality.</p>
+                        <a href="#" class="read-more">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card" data-category="technology">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?auto=format&fit=crop&w=600&q=80" alt="Air Sensors">
+                        <div class="card-badge new">New</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="fa-regular fa-calendar"></i> Mar 2026</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Industrial Area</span>
+                        </div>
+                        <h3>IoT Air Quality Network</h3>
+                        <p>Deploying low-cost sensors to monitor PM2.5 and NO2 levels in real-time across industrial zones.</p>
+                        <a href="#" class="read-more">View Data <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card" data-category="community">
+                    <div class="card-image">
+                        <img src="group-photo.jpg" alt="Community Cleanup" onerror="this.src='https://images.unsplash.com/photo-1591193686104-fddba4d0e4d8?auto=format&fit=crop&w=600&q=80'">
+                        <div class="card-badge">Ongoing</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="fa-regular fa-calendar"></i> Feb 2026</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Mfangano Island</span>
+                        </div>
+                        <h3>River & Beach Cleanups</h3>
+                        <p>Weekly community-led cleanup drives to remove plastic waste from rivers and Lake Victoria shores.</p>
+                        <a href="#" class="read-more">Join Us <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card" data-category="conservation">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" alt="Highland Protection">
+                        <div class="card-badge planning">Planning</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="fa-regular fa-calendar"></i> Apr 2026</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Aberdares</span>
+                        </div>
+                        <h3>Highland Forest Protection</h3>
+                        <p>Working with rangers to protect water catchment areas from illegal logging and encroachment.</p>
+                        <a href="#" class="read-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="project-card" data-category="community">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80" alt="Education">
+                        <div class="card-badge">Active</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="fa-regular fa-calendar"></i> Jan 2026</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Schools</span>
+                        </div>
+                        <h3>Green Schools Program</h3>
+                        <p>Educating the next generation about climate change, recycling, and sustainable living practices.</p>
+                        <a href="#" class="read-more">View Report <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="project-card" data-category="technology">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Data Dashboard">
+                        <div class="card-badge new">Beta</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="fa-regular fa-calendar"></i> Mar 2026</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Online</span>
+                        </div>
+                        <h3>Public Data Dashboard</h3>
+                        <p>An open-source platform visualizing environmental data for policymakers and citizens.</p>
+                        <a href="#" class="read-more">Visit Site <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fa-solid fa-leaf"></i> EcoWatch
+                    </a>
+                    <p class="footer-desc">Dedicated to monitoring pollution and restoring nature across Kenya. Based in Mfangano Island.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2026</span> EcoWatch Project • Built by Joseph Ocnieng</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+    
+
+ <!-- Leaflet Map (Only strictly needed for Contact, but safe to include everywhere) -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Your Main Script -->
+<script src="script.js"></script>
+    </body>
+</html>

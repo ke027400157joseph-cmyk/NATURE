@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | EcoWatch</title>
+    
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Leaflet Map CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-leaf"></i> <span>EcoWatch</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Contact Section -->
+    <section class="contact-section">
+        <div class="overlay"></div>
+        
+        <div class="container contact-container">
+            
+            <!-- Left Side: Info & Map -->
+            <div class="contact-info">
+                <h1>Get In Touch</h1>
+                <p class="subtitle">Have a question about our projects on Mfangano Island? Want to volunteer? Send us a message!</p>
+                
+                <div class="info-items">
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>Sena, Mfangano Island<br>KE0274PEFAM, Kenya</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+254 700 123 456</p>
+                        </div>
+                    </div>
+                    
+                    <!-- UPDATED GMAIL ADDRESS BELOW -->
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <!-- CHANGE THIS TO YOUR REAL GMAIL -->
+                            <p>ecowatch.kenya@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live World Map -->
+                <div class="map-wrapper">
+                    <div id="worldMap"></div>
+                    <div class="map-label">
+                        <i class="fa-solid fa-map-pin"></i> Live Location: Mfangano Island
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Form -->
+            <div class="contact-form-wrapper">
+                <div class="form-box">
+                    <h2>Send Message</h2>
+                    <form id="contactForm">
+                        <div class="input-group">
+                            <label>Full Name</label>
+                            <input type="text" id="name" placeholder="Joseph Ocnieng" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Email Address</label>
+                            <input type="email" id="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Message</label>
+                            <textarea id="message" rows="4" placeholder="Type your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="send-btn">Send <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Community Photo Section -->
+    <section class="community-section">
+        <div class="container">
+            <div class="photo-showcase">
+                <div class="photo-content">
+                    <h2>Our Community at Sena</h2>
+                    <p>Together with the local youth and elders of Mfangano Island, we are building a sustainable future. This is the team behind the change.</p>
+                    <a href="gallery.html" class="btn-outline">View More Photos</a>
+                </div>
+                <div class="photo-frame">
+                    <!-- Make sure you save your group photo as 'group-photo.jpg' -->
+                    <img src="group-photo.jpg" alt="EcoWatch Team at Sena School" onerror="this.src='https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 EcoWatch Project • Mfangano Island, Kenya</p>
+        </div>
+    </footer>
+
+    <!-- Leaflet Map JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

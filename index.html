@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Nature | EcoWatch</title>
+    
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-leaf"></i> <span>EcoWatch</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-grid">
+            
+            <!-- Left Content -->
+            <div class="hero-content">
+                <span class="badge">🌍 Environment HTML Template</span>
+                <h1>Together <br><span class="highlight">We can heal</span> <br>The Earth</h1>
+                <p>Join Joseph Ochieng and the EcoWatch movement. We are dedicated to monitoring pollution, protecting our forests, and creating a sustainable future for East Africa.</p>
+                
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">Get Involved</a>
+                    <a href="about.html" class="btn btn-secondary">Learn More</a>
+                </div>
+
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>10k+</h3>
+                        <p>Trees Planted</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>Monitoring</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content: YOUR PHOTO -->
+            <div class="hero-image-wrapper">
+                <div class="photo-frame">
+                    <!-- REPLACE 'joseph.jpg' WITH YOUR ACTUAL IMAGE FILE NAME -->
+                    <img src="joseph.jpg" alt="Joseph Ocnieng" id="userPhoto" onerror="this.src='joseph.jpg'">
+                    
+                    <!-- Floating Badge -->
+                    <div class="floating-badge">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-check-circle"></i>
+                        </div>
+                        <div class="badge-text">
+                            <span class="label">Founder</span>
+                            <span class="name">Joseph Ocnieng</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blob blob-1"></div>
+                <div class="bg-blob blob-2"></div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container features-grid">
+            <div class="feature-card">
+                <div class="icon-circle">
+                    <i class="fa-solid fa-tree"></i>
+                </div>
+                <h3>Forest Conservation</h3>
+                <p>Protecting natural habitats and restoring green corridors in urban areas to combat climate change.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="icon-circle">
+                    <i class="fa-solid fa-water"></i>
+                </div>
+                <h3>Water Preservation</h3>
+                <p>Cleaning rivers and lakes, ensuring clean water access for communities across the region.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="icon-circle">
+                    <i class="fa-solid fa-wind"></i>
+                </div>
+                <h3>Air Quality</h3>
+                <p>Real-time monitoring of industrial emissions and traffic pollution to keep our air breathable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <i class="fa-solid fa-leaf"></i> EcoWatch
+            </div>
+            <p>Built for a cleaner future by Joseph Ocnieng.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 EcoWatch Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+   <!-- Leaflet Map (Only strictly needed for Contact, but safe to include everywhere) -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Your Main Script -->
+<script src="script.js"></script>
+</html>
